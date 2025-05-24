@@ -1,0 +1,91 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<h2>Our Services</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services - Maphasa Tech Solutions</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #003366;
+        }
+        table {
+            margin: 40px auto;
+            border-collapse: collapse;
+            width: 90%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #dddddd;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Maphasa Tech Solutions</h1>
+
+    <table>
+        <caption>Our Services</caption>
+        <thead>
+            <tr>
+                <th>Service Category</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Software Development</strong></td>
+                <td>Custom web and mobile app development (Kotlin, Django, Flutter, etc.)</td>
+            </tr>
+            <tr>
+                <td><strong>Cloud Solutions</strong></td>
+                <td>AWS, Google Cloud, and Azure setup and optimization</td>
+            </tr>
+            <tr>
+                <td><strong>Cybersecurity</strong></td>
+                <td>Vulnerability assessments, penetration testing, and endpoint protection</td>
+            </tr>
+            <tr>
+                <td><strong>IT Consulting</strong></td>
+                <td>Digital strategy, IT project management, and systems integration</td>
+            </tr>
+            <tr>
+                <td><strong>DevOps</strong></td>
+                <td>CI/CD pipeline setup, containerization (Docker), and server automation</td>
+            </tr>
+            <tr>
+                <td><strong>Data Services</strong></td>
+                <td>Database management, analytics, and business intelligence solutions</td>
+            </tr>
+            <tr>
+                <td><strong>UI/UX Design</strong></td>
+                <td>Modern, responsive, and user-focused interface design</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
+{% endblock %}
